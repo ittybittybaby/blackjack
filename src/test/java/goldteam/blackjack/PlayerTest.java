@@ -72,5 +72,7 @@ public class PlayerTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    Array[] suits = {suit.HEARTS, suit.DIAMONDS}
 }
 
