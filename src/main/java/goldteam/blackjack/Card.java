@@ -1,3 +1,5 @@
+package goldteam.blackjack;
+
 import goldteam.blackjack.Rank;
 import goldteam.blackjack.Suit;
 

@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8351c0d0-63e4-4070-bf96-c466e36efff6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Card.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Deck.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Game.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Player.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/goldteam/blackjack/CardTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/goldteam/blackjack/GameTest.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Rank.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Suit.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/CardTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/goldteam/blackjack/DeckTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/goldteam/blackjack/GameTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/goldteam/blackjack/PlayerTest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Card.class" afterPath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Card.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Deck.class" afterPath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Deck.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Game.class" afterPath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Game.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Player.class" afterPath="$PROJECT_DIR$/target/classes/goldteam/blackjack/Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/goldteam/blackjack/GameTest.class" afterPath="$PROJECT_DIR$/target/test-classes/goldteam/blackjack/GameTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blackjack.iml" afterPath="$PROJECT_DIR$/blackjack.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goldteam/blackjack/Card.java" afterPath="$PROJECT_DIR$/src/main/java/goldteam/blackjack/Card.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goldteam/blackjack/Deck.java" afterPath="$PROJECT_DIR$/src/main/java/goldteam/blackjack/Deck.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goldteam/blackjack/Game.java" afterPath="$PROJECT_DIR$/src/main/java/goldteam/blackjack/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/goldteam/blackjack/GameTest.java" afterPath="$PROJECT_DIR$/src/test/java/goldteam/blackjack/GameTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/goldteam/blackjack/PlayerTest.java" afterPath="$PROJECT_DIR$/src/test/java/goldteam/blackjack/PlayerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goldteam/blackjack/Player.java" afterPath="$PROJECT_DIR$/src/main/java/goldteam/blackjack/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/goldteam/blackjack/Rank.java" afterPath="$PROJECT_DIR$/src/main/java/goldteam/blackjack/Rank.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/goldteam/blackjack/CardTest.java" afterPath="$PROJECT_DIR$/src/test/java/goldteam/blackjack/CardTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,27 +33,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/goldteam/blackjack/GameTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/goldteam/blackjack/PlayerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="75" column="47" lean-forward="false" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CardTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/goldteam/blackjack/CardTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -57,7 +48,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-118">
               <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
+              <folding>
+                <marker date="1509060441000" expanded="true" signature="355:369" ph="{...}" />
+                <marker date="1509060441000" expanded="true" signature="403:418" ph="{...}" />
+                <marker date="1509060441000" expanded="true" signature="457:503" ph="{...}" />
+                <marker date="1509060441000" expanded="false" signature="548:558" ph=" { " />
+                <marker date="1509060441000" expanded="false" signature="583:589" ph=" }" />
+                <marker date="1509060441000" expanded="true" signature="620:776" ph="{...}" />
+                <marker date="1509060441000" expanded="true" signature="807:934" ph="{...}" />
+                <marker date="1509060441000" expanded="false" signature="976:986" ph=" { " />
+                <marker date="1509060441000" expanded="false" signature="1005:1011" ph=" }" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,7 +68,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-              <folding />
+              <folding>
+                <marker date="1509060441000" expanded="false" signature="218:229" ph=" { " />
+                <marker date="1509060441000" expanded="false" signature="246:252" ph=" }" />
+                <marker date="1509060441000" expanded="false" signature="280:291" ph=" { " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,9 +91,12 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/goldteam/blackjack/Card.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1509060441000" expanded="true" signature="199:258" ph="{...}" />
+                <marker date="1509060441000" expanded="false" signature="290:301" ph=" { " />
+                <marker date="1509060441000" expanded="false" signature="324:330" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -108,10 +116,12 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/goldteam/blackjack/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="46" column="53" lean-forward="false" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+              <caret line="55" column="53" lean-forward="false" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
               <folding>
-                <element signature="e#887#888#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#1149#1150#0" expanded="true" />
+                <marker date="1509060441000" expanded="false" signature="893:899" ph=" }" />
+                <marker date="1509060441000" expanded="true" signature="946:1089" ph="{...}" />
+                <marker date="1509060441000" expanded="true" signature="1166:1172" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -377,16 +387,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509052644192</updated>
-      <workItem from="1509052645443" duration="2709000" />
+      <workItem from="1509052645443" duration="3068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2709000" />
+    <option name="totallyTimeSpent" value="3068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="23" width="1280" height="661" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -526,9 +535,12 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/goldteam/blackjack/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1509060441000" expanded="true" signature="199:258" ph="{...}" />
+            <marker date="1509060441000" expanded="false" signature="290:301" ph=" { " />
+            <marker date="1509060441000" expanded="false" signature="324:330" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -544,10 +556,12 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/goldteam/blackjack/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="46" column="53" lean-forward="false" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+          <caret line="55" column="53" lean-forward="false" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
           <folding>
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <marker date="1509060441000" expanded="false" signature="893:899" ph=" }" />
+            <marker date="1509060441000" expanded="true" signature="946:1089" ph="{...}" />
+            <marker date="1509060441000" expanded="true" signature="1166:1172" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -556,7 +570,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-118">
           <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
+          <folding>
+            <marker date="1509060441000" expanded="true" signature="355:369" ph="{...}" />
+            <marker date="1509060441000" expanded="true" signature="403:418" ph="{...}" />
+            <marker date="1509060441000" expanded="true" signature="457:503" ph="{...}" />
+            <marker date="1509060441000" expanded="false" signature="548:558" ph=" { " />
+            <marker date="1509060441000" expanded="false" signature="583:589" ph=" }" />
+            <marker date="1509060441000" expanded="true" signature="620:776" ph="{...}" />
+            <marker date="1509060441000" expanded="true" signature="807:934" ph="{...}" />
+            <marker date="1509060441000" expanded="false" signature="976:986" ph=" { " />
+            <marker date="1509060441000" expanded="false" signature="1005:1011" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -564,7 +588,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
+          <folding>
+            <marker date="1509060441000" expanded="false" signature="218:229" ph=" { " />
+            <marker date="1509060441000" expanded="false" signature="246:252" ph=" }" />
+            <marker date="1509060441000" expanded="false" signature="280:291" ph=" { " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -584,18 +612,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/goldteam/blackjack/GameTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/goldteam/blackjack/PlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        <state relative-caret-position="1140">
+          <caret line="76" column="47" lean-forward="false" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/goldteam/blackjack/PlayerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/goldteam/blackjack/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="75" column="47" lean-forward="false" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
+        <state relative-caret-position="570">
+          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
           <folding />
         </state>
       </provider>

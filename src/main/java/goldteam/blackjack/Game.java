@@ -14,10 +14,11 @@ public class  Game {
 
     protected void initializeGame() {
         Deck deck = new Deck();
-        Player dealer = new Player();
-        Player player = new Player();
+        Player dealer = new Player("dealer", 1000.0);
+        Player player = new Player("Playa' 1", 1000.0);
         players.add(dealer);
         players.add(player);
+        activePlayer = dealer;
 
     }
 
@@ -25,8 +26,16 @@ public class  Game {
         return players;
     }
 
+    public void setActivePlayer(Player player) {
+        this.activePlayer = player;
+    }
+
     public Player getActivePlayer() {
         return activePlayer;
+    }
+
+    public void giveCardToPlayer(Player player, Deck deck) {
+        player.addCardtoHand(deck.);
     }
 
     public void endTurn(Player activePlayer) {

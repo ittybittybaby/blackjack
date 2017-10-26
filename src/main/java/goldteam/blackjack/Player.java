@@ -8,7 +8,7 @@ public class Player {
     private ArrayList<Card> cardsInHand;
 
     public Player (String name, Double money){
-        this.name=name;
+        this.name = name;
         this.money=money;
         this.cardsInHand=new ArrayList<Card>();
     }
