@@ -3,6 +3,8 @@ package goldteam.blackjack;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 public class GameTest {
@@ -17,7 +19,17 @@ public class GameTest {
     }
 
     @Test
-    public void endTurnTest
+    public void setActivePlayerTest() {
+        game.initializeGame();
+        ArrayList<Player> players = game.getPlayers();
+        game.setActivePlayer(players.get(1));
+
+        Player expected = players.get(1);
+
+        Player actual = game.getActivePlayer();
+
+        Assert.assertEquals(expected, actual);
+    }
 
 
 }

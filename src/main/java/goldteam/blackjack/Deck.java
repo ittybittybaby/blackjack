@@ -29,6 +29,13 @@ public class Deck{
 
     }
 
+    public Card giveCard() {
+
+        Card given = cards.get(0);
+        cards.remove(0);
+        return given;
+    }
+
     public void populate() {
         ArrayList<Card> cards = new ArrayList();
 
