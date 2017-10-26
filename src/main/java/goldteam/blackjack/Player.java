@@ -1,7 +1,4 @@
-package kozulak.elliott.blackjack;
-
-import kozulak.elliott.blackjack.Card;
-
+package goldteam.blackjack;
 import java.util.ArrayList;
 
 public class Player {

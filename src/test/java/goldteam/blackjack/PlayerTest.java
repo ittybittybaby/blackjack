@@ -1,4 +1,4 @@
-import kozulak.elliott.blackjack.*;
+package goldteam.blackjack;
 import org.junit.Assert;
 import org.junit.Test;
 
