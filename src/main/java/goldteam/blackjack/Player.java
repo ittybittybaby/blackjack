@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class Player {
 
     private String name;
-    private Double money;
+    private Double cash;
     private ArrayList<Card> cardsInHand;
 
-    public Player(String name, Double money) {
+    public Player(String name, Double cash) {
         this.name = name;
-        this.money = money;
+        this.cash = cash;
         this.cardsInHand = new ArrayList<Card>();
     }
 
@@ -20,11 +20,11 @@ public class Player {
     }
 
     public Double checkBalance() {
-        return money;
+        return cash;
     }
 
     public Double wager(Double wager) {
-        money -= wager;
+        cash -= wager;
         return wager;
     }
 
@@ -42,14 +42,29 @@ public class Player {
 
     public int getHandValue() {
         int total = 0;
+        int acesCount = 0;
+
         for (Card card : cardsInHand) {
+            if (card.getRankValue() == 11)
+                acesCount++;
             total += card.getRankValue();
+        }
+
+        if (total > 21) {
+            while (acesCount > 0) {
+                total -= 10;
+                acesCount--;
+            }
         }
         return total;
     }
 
     public ArrayList<Card> getHandList() {
         return cardsInHand;
+    }
+
+    public void addWinnings(Double winnings) {
+        cash += winnings;
     }
 
 

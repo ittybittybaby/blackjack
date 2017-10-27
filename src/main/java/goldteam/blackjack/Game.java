@@ -53,6 +53,10 @@ public class Game {
         }
     }
 
+    public void giveCardToPlayer(){
+
+    }
+
 
 
     //public
