@@ -7,23 +7,30 @@ public class  Game {
     private ArrayList<Player> players = new ArrayList<Player>();
     private Player activePlayer;
     private static final int  BLACKJACK = 21;
+    protected Deck deck;
 
     public Game() {
         initializeGame();
     }
 
     protected void initializeGame() {
-        Deck deck = new Deck();
+        deck = new Deck();
+        deck.populate();
+        deck.shuffleDeck(deck);
         Player dealer = new Player("dealer", 1000.0);
         Player player = new Player("Playa' 1", 1000.0);
         players.add(dealer);
         players.add(player);
         activePlayer = dealer;
-
+        giveCardToPlayer();
     }
 
     public ArrayList<Player> getPlayers() {
         return players;
+    }
+
+    public Player getPlayerAtIndex(int index) {
+        return players.get(index);
     }
 
     public void setActivePlayer(Player player) {
@@ -34,11 +41,12 @@ public class  Game {
         return activePlayer;
     }
 
-    public void giveCardToPlayer(Player player, Deck deck) {
-        player.addCardtoHand(deck.);
+    public void giveCardToPlayer() {
+        Card card = this.deck.giveCard();
+        this.activePlayer.addCardtoHand(card);
     }
 
-    public void endTurn(Player activePlayer) {
+    public void endTurn() {
         for(Player player:players) {
             if(!activePlayer.equals(player))
                 this.activePlayer = player;
@@ -56,10 +64,6 @@ public class  Game {
     public Player getActivePlayerByName(String name){
 
     }
-
-
-
-    //public
 
 
 }
