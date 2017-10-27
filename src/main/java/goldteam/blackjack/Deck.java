@@ -18,8 +18,12 @@ public class Deck{
         return cards;
     }
 
-    public int getDeckSize(Deck deck) {
+    public int getDeckSize() {
         return cards.size();
+    }
+
+    public Card getCardByIndex(int index) {
+        return cards.get(index);
     }
 
     public void shuffleDeck(Deck deck) {

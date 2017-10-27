@@ -35,6 +35,7 @@ class DeckTest {
 //        shuffleDeck(cardsInDeck);
 //        shuffleDeck(cardsInDeck2);
 
+
         Suit expected_suit = Suit.CLUB;
         Integer expected_rank = Rank.ACE.getValue();
 

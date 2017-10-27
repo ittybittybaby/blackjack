@@ -53,17 +53,5 @@ public class  Game {
         }
     }
 
-    public void giveCardToPlayer(Player player, Deck deck){
-        return;
-    }
-
-    public void setActivePlayer(Player player){
-
-    }
-
-    public Player getActivePlayerByName(String name){
-
-    }
-
 
 }
