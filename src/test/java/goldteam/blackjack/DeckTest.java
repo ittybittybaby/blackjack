@@ -12,45 +12,47 @@ class DeckTest {
 
     Deck cardsInDeck = new Deck();
 
+
     @Test
-    void getCards() {
+    void getCardsTest() {
+        cardsInDeck.populate();
+
+        Card expected = new Card(Rank.ACE, Suit.CLUB);
+
+        Card actual = cardsInDeck.getCardByIndex(0);
+
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
-    void getDeckSize() {
-        Integer expected = 0;
+    void getDeckSizeTest() {
+        cardsInDeck.populate();
+        Integer expected = 52;
 
         Integer actual = cardsInDeck.getDeckSize();
 
         Assert.assertEquals(expected, actual);
-
     }
 
     @Test
-    void shuffleDeck(Deck cardsInDeck) {
+    void shuffleDeckTest(Deck cardsInDeck) {
 
-//        Deck cardsInDeck2 = new Deck();
-//        cardsInDeck.populate();
-//       cardsInDeck2.populate();
-//        shuffleDeck(cardsInDeck);
-//        shuffleDeck(cardsInDeck2);
+        cardsInDeck.populate();
 
+        Deck cleanDeck = new Deck();
+        cleanDeck.populate();
 
-        Suit expected_suit = Suit.CLUB;
-        Integer expected_rank = Rank.ACE.getValue();
+        cardsInDeck.shuffleDeck();
+        //cleanDeck.populate();
 
-        Suit actual_suit = cardsInDeck.getCardByIndex(0).getSuit();
-        Integer actual_rank = cardsInDeck.getCardByIndex(0).getRankValue();
+//        Card expected = testDeck.getCardByIndex(0);
+//        Card actual = cardsInDeck.getCardByIndex(0);
 
-
-        Assert.assertEquals(expected_suit,actual_suit);
-        Assert.assertEquals(expected_rank,actual_rank);
-
-
+        Assert.assertNotEquals(cardsInDeck, cleanDeck);
     }
 
     @Test
-    void giveCard() {
+    void giveCardTest() {
         cardsInDeck.populate();
         Card expected = cardsInDeck.getCardByIndex(0);
 
@@ -62,7 +64,7 @@ class DeckTest {
     }
 
     @Test
-    void getCard(){
+    void getCardTest(){
         cardsInDeck.populate();
         Suit expected_suit = Suit.CLUB;
         Integer expected_rank = Rank.ACE.getValue();
@@ -77,7 +79,7 @@ class DeckTest {
     }
 
     @Test
-    void populate() {
+    void populateTest() {
         cardsInDeck.populate();
         Suit expected_suit = Suit.SPADE;
         Integer expected_rank = Rank.KING.getValue();

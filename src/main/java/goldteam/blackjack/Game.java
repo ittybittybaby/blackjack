@@ -16,7 +16,7 @@ public class  Game {
     protected void initializeGame() {
         deck = new Deck();
         deck.populate();
-        deck.shuffleDeck(deck);
+        deck.shuffleDeck();
         Player dealer = new Player("dealer", 1000.0);
         Player player = new Player("Playa' 1", 1000.0);
         players.add(dealer);

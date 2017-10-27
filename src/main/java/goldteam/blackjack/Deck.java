@@ -26,8 +26,8 @@ public class Deck{
         return cards.get(index);
     }
 
-    public void shuffleDeck(Deck deck) {
-        ArrayList<Card> cards = deck.getCards();
+    public void shuffleDeck() {
+        ArrayList<Card> cards = this.getCards();
         Collections.shuffle(cards);
     }
 
