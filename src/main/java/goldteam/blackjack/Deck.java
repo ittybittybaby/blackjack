@@ -37,7 +37,7 @@ public class Deck{
     }
 
     public void populate() {
-        ArrayList<Card> cards = new ArrayList();
+        cards = new ArrayList();
 
         for (int i = 0; i < 4; i++) {
             Suit[] suitArray = new Suit[]{Suit.CLUB, Suit.DIAMOND, Suit.HEART, Suit.SPADE};

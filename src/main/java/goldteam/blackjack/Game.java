@@ -35,7 +35,7 @@ public class Game {
     }
 
     public void giveCardToPlayer(Player player, Deck deck) {
-        player.addCardtoHand(deck.);
+        player.addCardtoHand(deck.giveCard());
     }
 
     public void endTurn(Player activePlayer) {
@@ -43,6 +43,10 @@ public class Game {
             if(!activePlayer.equals(player))
                 this.activePlayer = player;
         }
+    }
+
+    public void giveCardToPlayer(){
+
     }
 
 
