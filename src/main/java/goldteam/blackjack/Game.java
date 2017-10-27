@@ -43,7 +43,7 @@ public class  Game {
 
     public void giveCardToPlayer() {
         Card card = this.deck.giveCard();
-        this.activePlayer.addCardtoHand(card);
+        this.activePlayer.addCardToHand(card);
     }
 
     public void endTurn() {

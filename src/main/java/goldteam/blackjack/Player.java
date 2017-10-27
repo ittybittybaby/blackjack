@@ -28,7 +28,7 @@ public class Player {
         return wager;
     }
 
-    public void addCardtoHand(Card newCard) {
+    public void addCardToHand(Card newCard) {
         cardsInHand.add(newCard);
     }
 

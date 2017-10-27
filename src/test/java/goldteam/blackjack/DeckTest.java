@@ -35,23 +35,6 @@ class DeckTest {
     }
 
     @Test
-    void shuffleDeckTest(Deck cardsInDeck) {
-
-        cardsInDeck.populate();
-
-        Deck cleanDeck = new Deck();
-        cleanDeck.populate();
-
-        cardsInDeck.shuffleDeck();
-        //cleanDeck.populate();
-
-//        Card expected = testDeck.getCardByIndex(0);
-//        Card actual = cardsInDeck.getCardByIndex(0);
-
-        Assert.assertNotEquals(cardsInDeck, cleanDeck);
-    }
-
-    @Test
     void giveCardTest() {
         cardsInDeck.populate();
         Card expected = cardsInDeck.getCardByIndex(0);

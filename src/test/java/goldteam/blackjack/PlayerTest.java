@@ -2,8 +2,6 @@ package goldteam.blackjack;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
-
 public class PlayerTest {
 
     Player player = new Player("Elliott", 300.00);
@@ -18,7 +16,7 @@ public class PlayerTest {
     }
 
     @Test
-    public void checkBalancetest() {
+    public void checkBalanceTest() {
         Double expected = 300.0;
         Double actual = player.checkBalance();
 
@@ -52,7 +50,7 @@ public class PlayerTest {
         Card card=new Card(Rank.TWO,Suit.DIAMOND);
         String expected=card.toString();
 
-        player.addCardtoHand(card);
+        player.addCardToHand(card);
 
         String actual=player.viewHand();
 
@@ -64,7 +62,7 @@ public class PlayerTest {
 
         Card card = new Card(Rank.ACE,Suit.SPADE);
         Card card2 = new Card(Rank.TEN,Suit.HEART);
-        player.addCardtoHand(card);
+        player.addCardToHand(card);
 
         int expected = 11;
 
@@ -80,10 +78,10 @@ public class PlayerTest {
         Card card = new Card(Rank.TWO,Suit.SPADE);
 
         for (int i=0; i<8; i++)
-        player.addCardtoHand(card);
+        player.addCardToHand(card);
 
-        player.addCardtoHand(new Card(Rank.ACE,Suit.DIAMOND));
-        player.addCardtoHand(new Card(Rank.ACE,Suit.DIAMOND));
+        player.addCardToHand(new Card(Rank.ACE,Suit.DIAMOND));
+        player.addCardToHand(new Card(Rank.ACE,Suit.DIAMOND));
 
         int expected = 18;
 

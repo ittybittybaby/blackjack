@@ -1,13 +1,7 @@
 package goldteam.blackjack;
 
-import goldteam.blackjack.Card;
-import goldteam.blackjack.Rank;
-import goldteam.blackjack.Suit;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Random;
 
 
 public class Deck{
@@ -45,8 +39,6 @@ public class Deck{
             for (int j = 0; j < 13; j++) {
                 Rank[] rankArray = new Rank[]{Rank.ACE, Rank.TWO, Rank.THREE, Rank.FOUR, Rank.FIVE, Rank.SIX, Rank.SEVEN, Rank.EIGHT, Rank.NINE, Rank.TEN, Rank.JACK, Rank.QUEEN, Rank.KING};
 
-                /*Suit suit = array[i];
-                Rank rank = Rank();*/
                 Card card = new Card(rankArray[j], suitArray[i]);
                 cards.add(card);
 
