@@ -12,15 +12,14 @@ import java.util.Random;
 
 public class Deck{
 
-    private ArrayList<Card> cards = new ArrayList<Card>();
-
+    private ArrayList<Card> cards = new ArrayList();
 
     public ArrayList<Card> getCards() {
         return cards;
     }
 
     public int getDeckSize(Deck deck) {
-        return deck.cards.size();
+        return cards.size();
     }
 
     public void shuffleDeck(Deck deck) {
@@ -29,7 +28,6 @@ public class Deck{
     }
 
     public Card giveCard() {
-
         Card given = cards.get(0);
         cards.remove(0);
         return given;
