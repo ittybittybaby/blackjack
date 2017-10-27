@@ -2,7 +2,7 @@ package goldteam.blackjack;
 
 import java.util.ArrayList;
 
-public class Game {
+public class  Game {
 
     private ArrayList<Player> players = new ArrayList<Player>();
     private Player activePlayer;
@@ -53,13 +53,17 @@ public class Game {
         }
     }
 
-    public void giveCardToPlayer(){
+    public void giveCardToPlayer(Player player, Deck deck){
+        return;
+    }
+
+    public void setActivePlayer(Player player){
 
     }
 
+    public Player getActivePlayerByName(String name){
 
-
-    //public
+    }
 
 
 }
