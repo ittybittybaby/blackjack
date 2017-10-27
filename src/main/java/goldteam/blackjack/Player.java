@@ -1,4 +1,5 @@
 package goldteam.blackjack;
+
 import java.util.ArrayList;
 
 public class Player {
@@ -7,41 +8,47 @@ public class Player {
     private Double money;
     private ArrayList<Card> cardsInHand;
 
-    public Player (String name, Double money){
+    public Player(String name, Double money) {
         this.name = name;
-        this.money=money;
-        this.cardsInHand=new ArrayList<Card>();
+        this.money = money;
+        this.cardsInHand = new ArrayList<Card>();
     }
 
 
-    public String getName(){return name;}
+    public String getName() {
+        return name;
+    }
 
-    public Double checkBalance(){return money;}
+    public Double checkBalance() {
+        return money;
+    }
 
-    public Double wager(Double wager){
-        money-=wager;
-        return wager;}
+    public Double wager(Double wager) {
+        money -= wager;
+        return wager;
+    }
 
-    public void addCardtoHand(Card newCard){
+    public void addCardtoHand(Card newCard) {
         cardsInHand.add(newCard);
     }
 
     public String viewHand() {
-        String handString="";
+        String handString = "";
         for (Card card : cardsInHand) {
-            handString+= card.toString();
+            handString += card.toString();
         }
         return handString;
     }
 
-    public int getHandValue(){
-        int total=0;
-        for(Card card:cardsInHand){
-            total+=card.getRankValue();}
+    public int getHandValue() {
+        int total = 0;
+        for (Card card : cardsInHand) {
+            total += card.getRankValue();
+        }
         return total;
     }
 
-    public ArrayList<Card> getHandList(){
+    public ArrayList<Card> getHandList() {
         return cardsInHand;
     }
 

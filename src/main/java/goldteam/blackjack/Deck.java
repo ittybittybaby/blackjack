@@ -12,7 +12,7 @@ import java.util.Random;
 
 public class Deck{
 
-    private ArrayList<Card> cards = new ArrayList<Card>(52);
+    private ArrayList<Card> cards = new ArrayList<Card>();
 
 
     public ArrayList<Card> getCards() {
@@ -26,7 +26,6 @@ public class Deck{
     public void shuffleDeck(Deck deck) {
         ArrayList<Card> cards = deck.getCards();
         Collections.shuffle(cards);
-
     }
 
     public Card giveCard() {
@@ -37,11 +36,11 @@ public class Deck{
     }
 
     public void populate() {
-        ArrayList<Card> cards = new ArrayList();
+        cards = new ArrayList();
 
         for (int i = 0; i < 4; i++) {
             Suit[] suitArray = new Suit[]{Suit.CLUB, Suit.DIAMOND, Suit.HEART, Suit.SPADE};
-            for (int j = 1; j < 13; j++) {
+            for (int j = 0; j < 13; j++) {
                 Rank[] rankArray = new Rank[]{Rank.ACE, Rank.TWO, Rank.THREE, Rank.FOUR, Rank.FIVE, Rank.SIX, Rank.SEVEN, Rank.EIGHT, Rank.NINE, Rank.TEN, Rank.JACK, Rank.QUEEN, Rank.KING};
 
                 /*Suit suit = array[i];

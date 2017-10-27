@@ -31,5 +31,29 @@ public class GameTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void giveCardToPlayerTest() {
+        game.initializeGame();
+        Player dealer = game.getPlayerAtIndex(0);
+        game.giveCardToPlayer();
+        ArrayList cards = dealer.getHandList();
+
+        int expected = 1;
+
+
+        int actual = cards.size();
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void endTurnTest() {
+        game.initializeGame();
+        game.endTurn();
+        //game
+
+        //Player expected =
+
+    }
 
 }

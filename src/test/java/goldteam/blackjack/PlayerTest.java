@@ -1,4 +1,5 @@
 //package goldteam.blackjack;
+//
 //import org.junit.Assert;
 //import org.junit.Test;
 //
@@ -29,38 +30,38 @@
 //    public void wagerTest() {
 //        Double expected = 20.0;
 //
-//        Double actual=player.wager(20.0);
+//        Double actual = player.wager(20.0);
 //
-//        Assert.assertEquals(expected,actual);
+//        Assert.assertEquals(expected, actual);
 //    }
 //
 //    @Test
-//    public void checkBalanceAfterWager(){
+//    public void checkBalanceAfterWager() {
 //
-//       Double expected=200.0;
+//        Double expected = 200.0;
 //
-//       player.wager(100.0);
+//        player.wager(100.0);
 //
-//       Double acutal=player.checkBalance();
+//        Double acutal = player.checkBalance();
 //
-//       Assert.assertEquals(expected,acutal);
+//        Assert.assertEquals(expected, acutal);
 //    }
 //
 //    @Test
-//    public void addCardToHandAndViewHandTest(){
+//    public void addCardToHandAndViewHandTest() {
 //
-//        Card card=new Card("");
-//        String expected=card.toString();
+//        Card card = new Card();
+//        String expected = card.toString();
 //
 //        player.addCardtoHand(card);
 //
-//        String actual=player.viewHand();
+//        String actual = player.viewHand();
 //
-//        Assert.assertEquals(expected,actual);
+//        Assert.assertEquals(expected, actual);
 //    }
 //
 //    @Test
-//    public void getHandValueTest(){
+//    public void getHandValueTest() {
 //
 //        Card card = new Card();
 //        Card card2 = new Card();
